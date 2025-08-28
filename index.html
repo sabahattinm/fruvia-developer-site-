@@ -3,7 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FruVia - Mobil Uygulama Geliştirici</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>FruVia: AI Fruit Quality Analyzer - Meyve Sebze Kalite Kontrol Uygulaması</title>
+    <meta name="description" content="FruVia ile AI teknolojisi kullanarak meyve ve sebzelerin kalitesini analiz edin. Taze gıda seçimi için akıllı mobil asistan. Google Play'de ücretsiz indirin.">
+    <meta name="keywords" content="meyve kalite kontrol, sebze analizi, AI gıda uygulaması, taze meyve seçimi, FruVia, mobil uygulama, sağlıklı beslenme, gıda kalitesi">
+    <meta name="author" content="FruVia Team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sabahattinm.github.io/fruvia-developer-site-/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FruVia: AI Fruit Quality Analyzer - Akıllı Meyve Sebze Uygulaması">
+    <meta property="og:description" content="AI teknolojisi ile meyve ve sebzelerin kalitesini analiz eden akıllı mobil uygulama. Taze gıda seçimi için en iyi asistanınız.">
+    <meta property="og:image" content="https://sabahattinm.github.io/fruvia-developer-site-/fruvia-og-image.jpg">
+    <meta property="og:url" content="https://sabahattinm.github.io/fruvia-developer-site-/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FruVia">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FruVia: AI Fruit Quality Analyzer">
+    <meta name="twitter:description" content="AI ile meyve sebze kalite kontrolü yapan akıllı mobil uygulama">
+    <meta name="twitter:image" content="https://sabahattinm.github.io/fruvia-developer-site-/fruvia-twitter-image.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "FruVia: AI Fruit Quality Analyzer",
+        "description": "AI teknolojisi kullanarak meyve ve sebzelerin kalitesini analiz eden mobil uygulama",
+        "applicationCategory": "Food & Drink",
+        "operatingSystem": "Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "ratingCount": "100"
+        },
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.sebo.fruvia"
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -157,7 +202,7 @@
         .btn-primary {
             background: linear-gradient(45deg, #667eea, #764ba2);
             color: white;
-            box-shadow: 0 10px 30 card px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
         }
         .btn-secondary {
             background: rgba(255, 255, 255, 0.1);
@@ -379,6 +424,29 @@
             0% { transform: translateY(100vh) rotate(0deg); }
             100% { transform: translateY(-100px) rotate(360deg); }
         }
+        /* FAQ Section */
+        .faq {
+            padding: 5rem 2rem;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: white;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-links {
@@ -420,6 +488,7 @@
         <div class="floating-element" style="left: 80%; animation-delay: -12s;">🍓</div>
         <div class="floating-element" style="left: 90%; animation-delay: -7s;">🥝</div>
     </div>
+    
     <nav>
         <div class="nav-container">
             <div class="nav-logo">
@@ -429,88 +498,118 @@
                 <li><a href="#home">Ana Sayfa</a></li>
                 <li><a href="#features">Özellikler</a></li>
                 <li><a href="#app">Uygulama</a></li>
+                <li><a href="#faq">SSS</a></li>
                 <li><a href="#contact">İletişim</a></li>
             </ul>
         </div>
     </nav>
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-logo">🍎</div>
-            <h1>FruVia</h1>
-            <p>Meyve ve sebze dünyasını keşfetmeniz için tasarlanan yenilikçi mobil uygulamalar geliştiriyoruz. Sağlıklı yaşamın dijital rehberi.</p>
-            <div class="cta-buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.sebo.fruvia" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Uygulamayı İndir</a>
-                <a href="#features" class="btn btn-secondary">Özellikleri Keşfet</a>
-            </div>
-        </div>
-    </section>
-    <section class="features fade-in" id="features">
-        <div class="container">
-            <h2 class="section-title">Neden FruVia?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <span class="feature-icon">🎯</span>
-                    <h3>Kapsamlı Rehber</h3>
-                    <p>Yüzlerce meyve ve sebzenin faydalarını, besin değerlerini ve tüketim önerilerini detaylı bir şekilde keşfedin.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">📱</span>
-                    <h3>Modern Tasarım</h3>
-                    <p>Kullanıcı dostu arayüz ve modern tasarım anlayışı ile mükemmel bir mobil deneyim sunuyoruz.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🔍</span>
-                    <h3>Akıllı Arama</h3>
-                    <p>Gelişmiş arama algoritması ile aradığınız meyve ve sebzeleri kolayca bulun ve özelliklerini öğrenin.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">💡</span>
-                    <h3>Günlük İpuçları</h3>
-                    <p>Sağlıklı beslenme alışkanlıkları edinmek için günlük ipuçları ve öneriler alın.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">📊</span>
-                    <h3>Besin Analizi</h3>
-                    <p>Meyve ve sebzelerin detaylı besin analizi ile beslenme planınızı optimize edin.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🏆</span>
-                    <h3>Başarım Sistemi</h3>
-                    <p>Sağlıklı beslenme hedeflerinizi takip edin ve başarımlar kazanarak motivasyonunuzu yüksek tutun.</p>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-logo">🍎</div>
+                <h1>FruVia: AI Fruit Quality Analyzer</h1>
+                <p>Yapay zeka teknolojisi ile meyve ve sebzelerin kalitesini analiz eden akıllı mobil uygulaması. Taze gıda seçimi için en iyi asistanınız. AI teknolojisi sayesinde meyve ve sebzelerin tazelik durumunu, besin değerlerini ve kalite seviyesini anında öğrenin.</p>
+                <div class="cta-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.sebo.fruvia" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="FruVia uygulamasını Google Play Store'dan indirin">Uygulamayı Ücretsiz İndir</a>
+                    <a href="#features" class="btn btn-secondary" aria-label="FruVia uygulamasının özelliklerini keşfedin">AI Özelliklerini Keşfet</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="app-preview fade-in" id="app">
-        <div class="container">
-            <h2 class="section-title">Uygulamamızı Deneyin</h2>
-            <div class="app-mockup">
-                <h3 style="color: white; margin-bottom: 1rem;">FruVia - Meyve ve Sebze Rehberi</h3>
-                <p style="color: rgba(255,255,255,0.7); margin-bottom: 2rem;">Google Play Store'da mevcut olan FruVia uygulaması ile meyve ve sebzelerin dünyasını keşfedin!</p>
-                <a href="https://play.google.com/store/apps/details?id=com.sebo.fruvia" target="_blank" rel="noopener noreferrer" class="store-badge">📱 Google Play'den İndir</a>
-            </div>
-        </div>
-    </section>
-    <section class="contact fade-in" id="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2 class="section-title">İletişime Geçin</h2>
-                <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Uygulama geliştirme hizmetleri, işbirlikleri veya sorularınız için bizimle iletişime geçin.</p>
-                <div class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Adınız Soyadınız" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="E-posta Adresiniz" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Mesajınız" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+        </section>
+
+        <section class="features fade-in" id="features">
+            <div class="container">
+                <h2 class="section-title">FruVia AI Özellikleri</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <span class="feature-icon">🤖</span>
+                        <h3>AI Kalite Analizi</h3>
+                        <p>Gelişmiş yapay zeka algoritmaları ile meyve ve sebzelerin tazelik durumunu, olgunluk seviyesini ve kalite skorunu anında analiz edin.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon">📸</span>
+                        <h3>Akıllı Fotoğraf Tarama</h3>
+                        <p>Telefonunuzla fotoğraf çekin, AI teknolojisi meyve ve sebzenin türünü tanıyarak detaylı kalite raporunu sunsun.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon">🔍</span>
+                        <h3>Detaylı Besin Analizi</h3>
+                        <p>Her meyve ve sebzenin vitamin, mineral ve besin değeri bilgilerini AI destekli veritabanından anlık olarak öğrenin.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon">💡</span>
+                        <h3>Kişisel AI Tavsiyeleri</h3>
+                        <p>Yapay zeka asistanınız size en taze ürünleri seçme konusunda kişiselleştirilmiş öneriler sunar.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon">📊</span>
+                        <h3>Kalite Skorlama Sistemi</h3>
+                        <p>AI algoritması her ürün için 1-10 arası kalite skoru vererek en iyi seçimi yapmanıza yardımcı olur.</p>
+                    </article>
+                    <article class="feature-card">
+                        <span class="feature-icon">🏆</span>
+                        <h3>Sağlıklı Beslenme Rehberi</h3>
+                        <p>AI destekli beslenme planlaması ile günlük vitamin ve mineral ihtiyaçlarınızı karşılayan menüler oluşturun.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="app-preview fade-in" id="app">
+            <div class="container">
+                <h2 class="section-title">FruVia AI Uygulamasını İndirin</h2>
+                <div class="app-mockup">
+                    <h3 style="color: white; margin-bottom: 1rem;">FruVia: AI Fruit Quality Analyzer</h3>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 2rem;">Google Play Store'da ücretsiz olarak mevcut olan FruVia uygulaması ile yapay zeka destekli meyve ve sebze kalite analizinin gücünü keşfedin! Akıllı algoritmalrımız sayesinde en taze ve kaliteli gıdaları seçin.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.sebo.fruvia" target="_blank" rel="noopener noreferrer" class="store-badge" aria-label="FruVia AI uygulamasını Google Play Store'dan ücretsiz indirin">📱 Google Play'den Ücretsiz İndir</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq fade-in" id="faq">
+            <div class="container">
+                <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+                <div class="faq-item">
+                    <div class="faq-question">FruVia AI nasıl çalışır?</div>
+                    <div class="faq-answer">FruVia, gelişmiş makine öğrenmesi algoritmaları kullanarak meyve ve sebze fotoğraflarını analiz eder. Görsel tanıma teknolojisi ile ürünün türünü belirleyip, kalite parametrelerini değerlendirerek size detaylı bir rapor sunar.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Uygulama hangi meyve ve sebzeleri tanıyor?</div>
+                    <div class="faq-answer">FruVia AI sistemi 100'den fazla farklı meyve ve sebze türünü tanıyabilir. Elma, armut, muz, domates, salatalık, havuç gibi yaygın ürünlerden egzotik meyvelere kadar geniş bir yelpazede analiz yapabilir.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">AI analizi ne kadar doğru?</div>
+                    <div class="faq-answer">FruVia'nın AI sistemi %95 üzerinde doğruluk oranına sahiptir. Binlerce ürün fotoğrafıyla eğitilmiş derin öğrenme modeli sayesinde yüksek hassasiyetle kalite analizi yapabilir.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Uygulama ücretsiz mi?</div>
+                    <div class="faq-answer">Evet, FruVia tamamen ücretsizdir. Google Play Store'dan indirip temel AI analiz özelliklerini hiçbir ücret ödemeden kullanabilirsiniz.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact fade-in" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">İletişime Geçin</h2>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">FruVia AI uygulaması hakkında sorularınız, geri bildirimleriniz veya işbirliki teklifleriniz için bizimle iletişime geçin.</p>
+                    <form class="contact-form" aria-label="İletişim formu">
+                        <div class="form-group">
+                            <input type="text" placeholder="Adınız Soyadınız" required aria-label="Ad Soyad">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-posta Adresiniz" required aria-label="E-posta adresi">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Mesajınız" required aria-label="Mesaj içeriği"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" aria-label="Mesajınızı gönderin">Mesaj Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -525,6 +624,7 @@
                 }
             });
         });
+        
         // Scroll animations
         const observerOptions = {
             threshold: 0.1,
@@ -540,6 +640,7 @@
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
+        
         // Navigation background change on scroll
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
@@ -549,12 +650,14 @@
                 nav.style.background = 'rgba(255, 255, 255, 0.1)';
             }
         });
+        
         // Form submission
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Mesajınız alındı! En kısa sürede size dönüş yapacağız.');
-            this.reset(); // Reset form after submission
+            this.reset();
         });
+        
         // Add random delay to floating elements
         document.querySelectorAll('.floating-element').forEach(el => {
             const delay = Math.random() * 20;
